@@ -2,4 +2,4 @@
 
 <a href="https://codeclimate.com/github/Victorcrbs/repositoriotesteesi/maintainability"><img src="https://api.codeclimate.com/v1/badges/851c5cdf65f093c86cc5/maintainability" /></a>
 
-https://travis-ci.com/Victorcrbs/repositoriotesteesi.svg?branch=master
+[![Build Status](https://travis-ci.com/Victorcrbs/repositoriotesteesi.svg?branch=master)](https://travis-ci.com/Victorcrbs/repositoriotesteesi)
