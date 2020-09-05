@@ -8,9 +8,13 @@
 Integrantes: 
 
 Yasmin Sanches
+
 Guilherme Khoury
+
 Rodrigo Ichikawa
+
 Isabella Kuo
+
 Victor Sugiyama
 
 Descrição do trabalho:
