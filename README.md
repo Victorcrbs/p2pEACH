@@ -7,17 +7,17 @@
 
 Integrantes: 
 
-Yasmin Sanches
+Yasmin Sanches - yasminsanches
 
-Guilherme Khoury
+Guilherme Khoury - GuilhermeKhoury
 
-Rodrigo Ichikawa
+Rodrigo Ichikawa - ricchiRiver
 
-Isabella Kuo
+Isabella Kuo - 15483114
 
-Victor Sugiyama
+Victor Sugiyama - Victorcrbs
 
-Ana Clara Cavalcante
+Ana Clara Cavalcante - claracavalcante
 
 Descrição do trabalho:
 
