@@ -1,0 +1,40 @@
+<h1>Novo usuário</h1>
+
+<% if @usuario.errors.any? %>
+<div id="error_explanation">
+    <h2>
+    <%= @usuario.errors.count %> erro(s) impedem que o usuario seja salvo:
+    </h2>
+    <ul>
+    <% @usuario.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+    <% end %>
+    </ul>
+</div>
+<% end %>
+
+<%= form_with scope: :usuario, url: usuarios_path, local: true do |form| %>
+  <p>
+    <%= form.label :nome %><br>
+    <%= form.text_field :nome %>
+  </p>
+ 
+  <p>
+    <%= form.label :nusp %><br>
+    <%= form.text_field :nusp %>
+  </p>
+
+  <p>
+    <%= form.label :senha %><br>
+    <%= form.text_field :senha %>
+  </p>
+
+  <p>
+    <%= form.label :numero %><br>
+    <%= form.text_field :numero %>
+  </p>
+ 
+  <p>
+    <%= form.submit 'Cadastrar-se' %>
+  </p>
+<% end %>
