@@ -1,8 +1,8 @@
 # README
 
-<a href="https://codeclimate.com/github/Victorcrbs/repositoriotesteesi/maintainability"><img src="https://api.codeclimate.com/v1/badges/851c5cdf65f093c86cc5/maintainability" /></a>
+<a href="https://codeclimate.com/github/Victorcrbs/p2pEACH/maintainability"><img src="https://api.codeclimate.com/v1/badges/05f4c4269f7fb46b0d27/maintainability" /></a>
 
-[![Build Status](https://travis-ci.com/Victorcrbs/repositoriotesteesi.svg?branch=master)](https://travis-ci.com/Victorcrbs/repositoriotesteesi)
+[![Build Status](https://travis-ci.com/Victorcrbs/p2pEACH.svg?branch=master)](https://travis-ci.com/Victorcrbs/p2pEACH)
 
 
 Integrantes: 
