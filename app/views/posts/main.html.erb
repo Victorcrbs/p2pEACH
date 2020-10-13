@@ -1,0 +1,12 @@
+<h1>Objetos para pegar emprestado</h1>
+
+<% @posts.each do |post| %>
+
+<h2><%= post.Obj %></h2>
+<h3>Descrição:</h3>
+<p><%= post.Notes %></p>
+<h3>Horário Disponível:</h3>
+<p><%= post.time %></p>
+<h3> Tags: </h3>
+<p><%= post.tags %></p>
+<% end %>
