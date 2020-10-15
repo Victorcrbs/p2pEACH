@@ -1,0 +1,25 @@
+<%= form_with scope: :anuncio, url: anuncios_path, local: true do |form| %>
+    <p>
+      <%= form.label :"item" %><br>
+      <%= form.text_field :"item" %>
+    </p>
+   
+    <p>
+      <%= form.label :descrição %><br>
+      <%= form.text_area :descrição %>
+    </p>
+   
+    <p>
+      <%= form.label :horário %><br>
+      <%= form.text_field :horário %>
+    </p>
+
+    <p>
+      <%= form.label :tags %><br>
+      <%= form.text_field :tags %>
+    </p>
+
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
