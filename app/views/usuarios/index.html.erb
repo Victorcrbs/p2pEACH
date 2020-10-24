@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Usuários</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>Email</th>
+      <th>Telefone</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuarios.each do |usuario| %>
+      <tr>
+        <td><%= usuario.nome %></td>
+        <td><%= usuario.snome %></td>
+        <td><%= usuario.email %></td>
+        <td><%= usuario.fone %></td>
+        <td><%= link_to 'Mostrar', usuario %></td>
+        <td><%= link_to 'Modificar', edit_usuario_path(usuario) %></td>
+        <td><%= link_to 'Excluir', usuario, method: :delete, data: { confirm: 'Tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo usuário', new_usuario_path %>
