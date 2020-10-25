@@ -6,7 +6,7 @@ RSpec.describe "usuarios/edit", type: :view do
       nome: "MyString",
       snome: "MyString",
       email: "MyString",
-      password: "",
+      password: "MyString",
       fone: "MyString"
     ))
   end
