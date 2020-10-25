@@ -7,3 +7,7 @@ install:
     - node -v
     - npm i -g yarn
     - yarn
+script: 
+    - bundle exec rake db:migrate
+    - bundle exec rake spec
+    - bundle exec rake cucumber
