@@ -8,6 +8,7 @@ RSpec.describe "usuarios/index", type: :view do
         snome: "Snome",
         email: "Email",
         password: "",
+        password_confirmation: "",
         fone: "Fone"
       ),
       Usuario.create!(
@@ -15,6 +16,7 @@ RSpec.describe "usuarios/index", type: :view do
         snome: "Snome",
         email: "Email",
         password: "",
+        password_confirmation: "",
         fone: "Fone"
       )
     ])
