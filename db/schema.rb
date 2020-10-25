@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_15_015606) do
+ActiveRecord::Schema.define(version: 2020_10_24_144016) do
 
   create_table "anuncios", force: :cascade do |t|
     t.string "item"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 2020_10_15_015606) do
     t.string "tags"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "usuarios", force: :cascade do |t|
+    t.string "nome"
+    t.string "snome"
+    t.string "email"
+    t.string "password_digest"
+    t.string "fone"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_usuarios_on_email", unique: true
   end
 
 end
