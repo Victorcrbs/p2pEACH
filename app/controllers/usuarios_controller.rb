@@ -1,5 +1,6 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
+  wrap_parameters :usuario, include: [:nome, :snome, :email, :password, :password_confirmation, :fone]
 
   # GET /usuarios
   # GET /usuarios.json
