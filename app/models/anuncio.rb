@@ -1,2 +1,2 @@
-class Anuncio < ApplicationRecord
+class Anuncio < ApplicationRecord 
 end
