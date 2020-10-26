@@ -8,6 +8,10 @@ class AnunciosController < ApplicationController
         @anuncio.save
         redirect_to @anuncio
     end
+    
+    def edit
+        @article = Article.find(params[:id])
+    end
 
     def show
         @anuncio = Anuncio.find(params[:id])
