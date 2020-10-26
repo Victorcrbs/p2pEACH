@@ -15,7 +15,8 @@
       <td><%= anuncio.descrição %></td>
       <td><%= anuncio.horário %></td>
       <td><%= anuncio.tags %></td>
-
+      
+      <td><%= link_to 'Edit', edit_article_path(anuncio) %></td>
     </tr>
   <% end %>
 </table>
