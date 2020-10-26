@@ -13,8 +13,13 @@ class AnunciosController < ApplicationController
         @anuncio = Anuncio.find(params[:id])
     end
 
-    private 
+
         def anuncio_params
             params.require(:anuncio).permit(:item, :descrição, :horário, :tags)
         end
+    
+    def index
+    @anuncios = Anuncio.all
+    end
+ 
 end
