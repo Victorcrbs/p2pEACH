@@ -1,0 +1,21 @@
+<h1>Objetos para pegar emprestado</h1>
+
+
+  <table>
+  <tr>
+    <th>item</th>
+    <th>descrição</th>
+    <th>horário</th>
+    <th>tags</th>
+  </tr>
+
+  <% @anuncios.each do |anuncio| %>
+    <tr>
+      <td><%= anuncio.item %></td>
+      <td><%= anuncio.descrição %></td>
+      <td><%= anuncio.horário %></td>
+      <td><%= anuncio.tags %></td>
+
+    </tr>
+  <% end %>
+</table>
