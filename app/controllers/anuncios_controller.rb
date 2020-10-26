@@ -10,7 +10,7 @@ class AnunciosController < ApplicationController
     end
     
     def edit
-        @article = Article.find(params[:id])
+        @anuncio = Anuncio.find(params[:id])
     end
 
     def show
