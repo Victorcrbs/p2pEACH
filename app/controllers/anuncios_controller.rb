@@ -1,5 +1,17 @@
-class AnunciosController < ApplicationController
+class AnunciosController < ApplicationController    
+    def index
+        @anuncios = Anuncio.all
+    end
+    
+    def show
+        @anuncio = Anuncio.find(params[:id])
+    end
+    
     def new
+    end
+    
+    def edit
+        @anuncio = Anuncios.find(params[:id])
     end
     
     def create
@@ -9,21 +21,18 @@ class AnunciosController < ApplicationController
         redirect_to @anuncio
     end
     
-    def edit
+    def update
         @anuncio = Anuncio.find(params[:id])
+        if @anuncio.update(params[:anuncio].permit(:item, :descrição, :horário, :tags))
+            redirect_to @anuncio
+        else
+            render 'edit'
+        end
     end
-
-    def show
-        @anuncio = Anuncio.find(params[:id])
-    end
-
-
+    
+    private
         def anuncio_params
             params.require(:anuncio).permit(:item, :descrição, :horário, :tags)
         end
-    
-    def index
-    @anuncios = Anuncio.all
-    end
  
 end
