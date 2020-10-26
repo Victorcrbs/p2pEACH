@@ -6,8 +6,7 @@ RSpec.describe "usuarios/show", type: :view do
       nome: "Nome",
       snome: "Snome",
       email: "Email",
-      password: "",
-      password_confirmation: "",
+      password: "password",
       fone: "Fone"
     ))
   end
@@ -17,7 +16,6 @@ RSpec.describe "usuarios/show", type: :view do
     expect(rendered).to match(/Nome/)
     expect(rendered).to match(/Snome/)
     expect(rendered).to match(/Email/)
-    expect(rendered).to match(//)
     expect(rendered).to match(/Fone/)
   end
 end
