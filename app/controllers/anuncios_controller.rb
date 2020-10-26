@@ -30,6 +30,13 @@ class AnunciosController < ApplicationController
         end
     end
     
+    def destroy
+        @anuncio = Anuncio.find(params[:id])
+        
+        @anuncio.destroy
+        redirect_to anuncios_path
+    end
+    
     private
         def anuncio_params
             params.require(:anuncio).permit(:item, :descrição, :horário, :tags)
