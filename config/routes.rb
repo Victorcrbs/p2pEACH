@@ -5,8 +5,8 @@ Rails.application.routes.draw do
   resources :usuarios
   get 'welcome/index'
   resources :anuncios
-  root 'welcome#index'
-  
+  root 'welcome#index' , as: 'home'
+ 
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'usuarios#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
