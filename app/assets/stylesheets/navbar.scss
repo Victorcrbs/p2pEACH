@@ -1,0 +1,25 @@
+body{margin: 0;}
+.navbar-list{
+    background-color: #0199b9;
+    list-style-type: none;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+ul.navbar-list li{
+    float: right;
+}
+.navbar-list-link{
+    display: block;
+    color: white ;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Arial";
+  }
+  
+.navbar-list-link:hover {
+    background-color: rgb(0, 0, 0)
+  }
