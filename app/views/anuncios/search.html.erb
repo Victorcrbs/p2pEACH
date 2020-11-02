@@ -1,0 +1,19 @@
+<h3>Resultados da busca</h3>  
+
+  <table>
+  <tr>
+    <th>item</th>
+    <th>descrição</th>
+    <th>horário</th>
+    <th>tags</th>
+  </tr>
+
+  <% @results.each do |result| %>  
+    <tr>
+     <td><%=  result.item %></td>
+      <td><%= result.descrição %></td>
+      <td><%= result.horário %></td>
+      <td><%= result.tags %></td>
+    </tr>
+    <% end %>
+</table>

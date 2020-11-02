@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   resources :anuncios
   root 'welcome#index' , as: 'home'
- 
+  get '/search', to: 'anuncios#search'
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'usuarios#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'

@@ -37,9 +37,19 @@ class AnunciosController < ApplicationController
         redirect_to anuncios_path
     end
     
-    private
+
         def anuncio_params
             params.require(:anuncio).permit(:item, :descrição, :horário, :tags)
+        end
+
+        def search  
+            if params[:search].blank?  
+                redirect_to(root_path, alert: "Empty field!") and return  
+              else  
+              @parameter = params[:search].downcase  
+              @results = Anuncio.all.where("lower(item) LIKE :search", search: "#{@parameter}%")  
+           
+          end
         end
  
 end
