@@ -47,7 +47,8 @@ class AnunciosController < ApplicationController
                 redirect_to(root_path, alert: "Empty field!") and return  
               else  
               @parameter = params[:search].downcase  
-              @results = Anuncio.all.where("lower(item) LIKE :search", search: "#{@parameter}%")  
+              @results = Anuncio.all.where("lower(item) LIKE :search", search: "#{@parameter}%")
+              @tags= Anuncio.all.where("lower(tags) LIKE :search", search: "#{@parameter}%")  
            
           end
         end
