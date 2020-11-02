@@ -18,6 +18,9 @@ class UsuariosController < ApplicationController
     @usuario = Usuario.new
   end
 
+  def profile
+  end
+
   # GET /usuarios/1/edit
   def edit
   end

@@ -11,7 +11,7 @@ Quando preencho o campo "Email" com "billybob@usp.br"
 E preencho o campo "Password" com "senha"
 E clico em "Login"
 Então deverei ver o aviso "Logado com sucesso."
-Quando clico em "Logout"
+Quando clico em "LOGOUT"
 Então deverei ver o aviso "Deslogado com sucesso"
 
 Cenário: Conta não existe

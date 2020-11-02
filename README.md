@@ -4,6 +4,7 @@
 
 [![Build Status](https://travis-ci.com/Victorcrbs/p2pEACH.svg?branch=master)](https://travis-ci.com/Victorcrbs/p2pEACH)
 
+[![Coverage Status](https://coveralls.io/repos/github/Victorcrbs/p2pEACH/badge.svg?branch=master)](https://coveralls.io/github/Victorcrbs/p2pEACH?branch=master)
 
 # Integrantes: 
 

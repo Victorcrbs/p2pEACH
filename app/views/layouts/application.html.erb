@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>P2PEACH</title>
+
+
+    <title>P2P EACH</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %>
@@ -10,30 +13,30 @@
   </head>
 
   <body>
-   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-  <a class="navbar-brand" href="#">P2P EACH</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarCollapse">
-    <ul class="navbar-nav mr-auto">
-      <li><%= link_to "Home", home_path%> </li>
-    </ul>
-      <ul class="navbar-nav mr-auto">
-      <li><%= link_to "Anúncios", anuncios_path %> </li>
-    </ul>
- 
-    <%= form_tag(search_path, :method => "get",   
-    class: 'navbar-form navbar-left') do %>  
-  <div class="input-group">  
-    <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>  
-    <div class="input-group-btn">  
-      <%= button_tag "Buscar", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>  
-    </div>  
-  </div>  
-<% end %>
-  </div>
-</nav>
+
+        <ul class="navbar-list">
+        <% if current_user %>
+          <li class="navbar-list-link"><%= current_user.nome%> <%= current_user.snome%></li>
+          <li><%= link_to "LOGOUT", logout_path, :class => "navbar-list-link" %></li>
+        <% else %>
+          <li><%=link_to "CADASTRE-SE", signup_path, :class => "navbar-list-link" %></li>
+          <li><%=link_to "LOGIN", login_path, :class => "navbar-list-link" %></li>
+        <% end %>
+          <li><%=link_to "USUARIOS", usuarios_path, :class => "navbar-list-link" %></li>
+          <li><%=link_to "PERFIL", perfil_path, :class => "navbar-list-link" %></li>
+          <li><%=link_to "HOME", welcome_index_path, :class => "navbar-list-link" %></li>
+          <li><%= link_to "Anúncios", anuncios_path %> </li>
+          <%= form_tag(search_path, :method => "get",   
+            class: 'navbar-form navbar-left') do %>  
+          <div class="input-group">  
+          <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>  
+          <div class="input-group-btn">  
+          <%= button_tag "Buscar", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>  
+          </div>  
+          </div>  
+          <% end %>
+        </ul>
+
     <%= yield %>
   </body>
 </html>
