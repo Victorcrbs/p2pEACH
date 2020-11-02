@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+
     <title>P2P EACH</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+<%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
         <ul class="navbar-list">
         <% if current_user %>
           <li class="navbar-list-link"><%= current_user.nome%> <%= current_user.snome%></li>
@@ -21,7 +25,18 @@
           <li><%=link_to "USUARIOS", usuarios_path, :class => "navbar-list-link" %></li>
           <li><%=link_to "PERFIL", perfil_path, :class => "navbar-list-link" %></li>
           <li><%=link_to "HOME", welcome_index_path, :class => "navbar-list-link" %></li>
+          <li><%= link_to "Anúncios", anuncios_path %> </li>
+          <%= form_tag(search_path, :method => "get",   
+            class: 'navbar-form navbar-left') do %>  
+          <div class="input-group">  
+          <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>  
+          <div class="input-group-btn">  
+          <%= button_tag "Buscar", :class => 'btn btn-info glyphicon glyphicon-search',:name => nil%>  
+          </div>  
+          </div>  
+          <% end %>
         </ul>
+
     <%= yield %>
   </body>
 </html>
