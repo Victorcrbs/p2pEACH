@@ -19,12 +19,8 @@
           <li><%=link_to "LOGIN", login_path, :class => "navbar-list-link" %></li>
         <% end %>
           <li><%=link_to "USUARIOS", usuarios_path, :class => "navbar-list-link" %></li>
-<%
-=begin%>
-           <li><%=link_to "PERFIL", perfil_path, :class => "navbar-list-link" %></li>
- 
-<%
-=end%>          <li><%=link_to "HOME", welcome_index_path, :class => "navbar-list-link" %></li>
+          <!-- <li><%=link_to "PERFIL", perfil_path, :class => "navbar-list-link" %></li> -->
+          <li><%=link_to "HOME", welcome_index_path, :class => "navbar-list-link" %></li>
         </ul>
     <%= yield %>
   </body>
