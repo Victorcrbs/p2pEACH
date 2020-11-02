@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Appteste</title>
+    <title>P2P EACH</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,17 @@
   </head>
 
   <body>
+        <ul class="navbar-list">
+        <% if current_user %>
+          <li class="navbar-list-link"><%= current_user.nome%> <%= current_user.snome%></li>
+          <li><%= link_to "LOGOUT", logout_path, :class => "navbar-list-link" %></li>
+        <% else %>
+          <li><%=link_to "CADASTRE-SE", signup_path, :class => "navbar-list-link" %></li>
+          <li><%=link_to "LOGIN", login_path, :class => "navbar-list-link" %></li>
+        <% end %>
+          <li><%=link_to "USUARIOS", usuarios_path, :class => "navbar-list-link" %></li>
+          <li><%=link_to "HOME", welcome_index_path, :class => "navbar-list-link" %></li>
+        </ul>
     <%= yield %>
   </body>
 </html>
