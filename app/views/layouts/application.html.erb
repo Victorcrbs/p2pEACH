@@ -7,21 +7,23 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
 
   <body>
-        <ul class="navbar-list">
-        <% if current_user %>
-          <li class="navbar-list-link"><%= current_user.nome%> <%= current_user.snome%></li>
-          <li><%= link_to "LOGOUT", logout_path, :class => "navbar-list-link" %></li>
-        <% else %>
-          <li><%=link_to "CADASTRE-SE", signup_path, :class => "navbar-list-link" %></li>
-          <li><%=link_to "LOGIN", login_path, :class => "navbar-list-link" %></li>
-        <% end %>
-          <li><%=link_to "USUARIOS", usuarios_path, :class => "navbar-list-link" %></li>
-          <li><%=link_to "PERFIL", perfil_path, :class => "navbar-list-link" %></li>
-          <li><%=link_to "HOME", welcome_index_path, :class => "navbar-list-link" %></li>
-        </ul>
+    <ul class="navbar-list">
+      <div id="navbar_title">
+        <li><%=link_to "P2P EACH", welcome_index_path, :class => "navbar-list-link" %></li>
+      </div>
+      <% if current_user %>
+        <li><%= link_to "#{current_user.nome} #{current_user.snome}", current_user, :class => "navbar-list-link" %></li>
+        <li><%= link_to "LOGOUT", logout_path, :class => "navbar-list-link" %></li>
+      <% else %>
+        <li><%=link_to "CADASTRE-SE", signup_path, :class => "navbar-list-link" %></li>
+        <li><%=link_to "LOGIN", login_path, :class => "navbar-list-link" %></li>
+      <% end %>
+    </ul>
     <%= yield %>
 </body>
 </html>
