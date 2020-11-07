@@ -1,11 +1,11 @@
 body{margin: 0;}
 @font-face {
   font-family: "Roboto Regular";
-  src: asset-path(Roboto-Regular) format("truetype");
+  src: asset-url("Roboto-Regular.ttf") format("truetype");
 }
 @font-face {
   font-family: "Roboto Bold";
-  src: asset-path(Roboto-Bold) format("truetype");
+  src: asset-url("Roboto-Bold.ttf") format("truetype");
 }
 .navbar-list{
     background-color: #0199b9;
