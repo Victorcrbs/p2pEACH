@@ -1,3 +1,4 @@
+
 Dado ('que estou na tela principal') do
     visit 'welcome/index'
 end
@@ -11,4 +12,5 @@ end
 
 Então ('devo estar na página principal') do
     expect(page).to have_current_path("/welcome/index")
+
 end
