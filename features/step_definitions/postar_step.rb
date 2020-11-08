@@ -9,9 +9,7 @@ Dado ('que estou na tela de criar anúncios') do
     visit 'anuncios/new'
 end
 
-Dado ('que estou na tela de anúncios') do
-    visit 'anuncios'
-end
+
 Então('meu anuncio está salvo no banco de dados') do
     anuncio = Anuncio.order("id").last
     expect( anuncio.item).to eq('caneca')
