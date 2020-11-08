@@ -1,20 +1,16 @@
-Dado ('que estou na tela de Anúncios') do
-    visit 'anuncios'
+
+Dado ('que estou na tela principal') do
+    visit 'welcome/index'
 end
-Então('meu anuncio está salvo no banco de dados') do
-    anuncio = Anuncio.order("id").last
-    expect( anuncio.item).to eq('caneca')
-    expect( anuncio.descrição).to eq('500 ml, um pouco amassada rsrs') 
-    expect(anuncio.horário).to eq('16-20h') 
-    expect( anuncio.tags).to eq('#canecaDASI #bandeco')
+Então ('devo estar na página de login') do
+    expect(page).to have_current_path("/login")
 end
 
-Então('vou para a tela Home') do
-    visit 'home'
+Então ('devo estar na página de cadastro') do
+    expect(page).to have_current_path("/signup")
 end
-Então('vou para a tela Anúncios') do
-    visit 'anuncios'
-end
-Dado ('que estou na tela Home') do
-    visit 'anuncios'
+
+Então ('devo estar na página principal') do
+    expect(page).to have_current_path("/welcome/index")
+
 end

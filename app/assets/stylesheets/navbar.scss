@@ -1,4 +1,12 @@
 body{margin: 0;}
+@font-face {
+  font-family: "Roboto Regular";
+  src: asset-url("Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: asset-url("Roboto-Bold.ttf") format("truetype");
+}
 .navbar-list{
     background-color: #0199b9;
     list-style-type: none;
@@ -10,16 +18,26 @@ body{margin: 0;}
 }
 ul.navbar-list li{
     float: right;
+    
 }
 .navbar-list-link{
     display: block;
-    color: white ;
+    color: white !important;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: "Arial";
+    font-family: "Roboto Regular" !important;
+    transition: background 0.25s;
   }
   
+#navbar_title{
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Roboto Bold" !important;
+  font-size: large;
+}
 .navbar-list-link:hover {
-    background-color: rgb(0, 0, 0)
-  }
+    background-color: #007086 !important
+}
