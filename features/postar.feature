@@ -14,7 +14,3 @@ E preencho o campo "Tags" com "#canecaDASI #bandeco"
 E clico em "Save anuncio"
 Então meu anuncio está salvo no banco de dados
 
-Cenário: Localizar meu post
-Dado que estou na tela de anúncios
-Quando termino de postar 
-Então vejo meu anúncio na página anuncios

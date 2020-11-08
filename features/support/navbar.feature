@@ -9,9 +9,9 @@ Para não precisar reescrever a url
 Cenário: ir de Home para Anúncios
 Dado que estou na tela Home
 Quando clico em "Anúncios"
-Então vou para a tela "Anúncios"
+Então vou para a tela Anúncios
 
 Cenário: ir de Anúncios para Home
 Dado que estou na tela Anúncios
 Quando clico em "Home"
-Então vou para a tela "Home"
+Então vou para a tela Home
