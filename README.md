@@ -8,8 +8,6 @@
 
 # Integrantes: 
 
-Yasmin Sanches - yasminsanches
-
 Guilherme Khoury - GuilhermeKhoury
 
 Rodrigo Ichikawa - ricchiRiver

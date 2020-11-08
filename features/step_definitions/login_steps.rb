@@ -9,3 +9,6 @@ Dado ('que estou na tela de login') do
 
     visit 'sessions/new'
 end
+Então ('deverei ver {string} na navbar') do |string|
+    expect(page).to have_content(string)
+end

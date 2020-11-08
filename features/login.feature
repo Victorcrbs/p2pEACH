@@ -10,9 +10,9 @@ Dado que estou na tela de login
 Quando preencho o campo "Email" com "billybob@usp.br"
 E preencho o campo "Password" com "senha"
 E clico em "Login"
-Então deverei ver o aviso "Logado com sucesso."
+Então deverei ver "Billy Bob" na navbar
 Quando clico em "LOGOUT"
-Então deverei ver o aviso "Deslogado com sucesso"
+Então deverei ver "LOGIN" na navbar
 
 Cenário: Conta não existe
 Dado que estou na tela de login
