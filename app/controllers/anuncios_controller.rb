@@ -23,7 +23,7 @@ class AnunciosController < ApplicationController
     
     def update
         @anuncio = Anuncio.find(params[:id])
-        if @anuncio.update(params[:anuncio].permit(:item, :descrição, :horário, :tags))
+        if @anuncio.update(params[:anuncio].permit(:item, :descrição, :horário, :tags, :tipo))
             redirect_to @anuncio
         else
             render 'edit'
