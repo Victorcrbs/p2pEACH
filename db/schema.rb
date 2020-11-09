@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_24_144016) do
+ActiveRecord::Schema.define(version: 2020_11_08_224800) do
 
   create_table "anuncios", force: :cascade do |t|
     t.string "item"
     t.text "descrição"
     t.text "horário"
     t.string "tags"
+    t.string "picture"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
