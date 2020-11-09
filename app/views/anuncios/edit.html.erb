@@ -37,6 +37,17 @@
     </p>
 
     <p>
+      <% tipos = {'Para emprestar'=>'emprestimo', 'Quero emprestado' => 'solicitacao'} %>
+      <fieldset>
+        <% lista = tipos.sort %>
+        <% lista.each do |tipo | %>
+          <% form.radio_button :tipo, tipo[1] %>
+          <label for="<% tipo[1] %>"> <% tipo[0] %></label>
+        <% end %>
+      </fieldset>
+    </p>
+
+    <p>
       <%= form.submit %>
     </p>
  
