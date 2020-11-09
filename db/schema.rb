@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_08_224800) do
+ActiveRecord::Schema.define(version: 2020_11_08_225830) do
 
   create_table "anuncios", force: :cascade do |t|
     t.string "item"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_11_08_224800) do
     t.text "horário"
     t.string "tags"
     t.string "picture"
+    t.string "tipo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
