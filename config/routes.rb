@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :anuncios
   root 'welcome#index'
   
+  get '/search', to: 'anuncios#search', as: 'search'
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'usuarios#new', as: 'signup'
   get 'login', to: 'sessions#new', as: 'login'
@@ -14,3 +15,4 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
+
