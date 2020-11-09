@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_08_230100) do
+ActiveRecord::Schema.define(version: 2020_11_08_231015) do
 
   create_table "anuncios", force: :cascade do |t|
     t.string "item"
@@ -20,9 +20,12 @@ ActiveRecord::Schema.define(version: 2020_11_08_230100) do
     t.string "picture"
     t.string "tipo"
     t.string "estado"
+    t.integer  "usuario_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
+  
+  add_index "anuncios", ["usuario_id"], name: "index_anuncios_on_usuario_id", using: :btree
 
   create_table "usuarios", force: :cascade do |t|
     t.string "nome"
@@ -34,5 +37,6 @@ ActiveRecord::Schema.define(version: 2020_11_08_230100) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_usuarios_on_email", unique: true
   end
-
+  
+  add_foreign_key "anuncios", "usuarios"
 end
