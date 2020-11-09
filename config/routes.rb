@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'sessions/create'
   get 'sessions/destroy'
   resources :usuarios
-  get 'welcome/index'
+root 'welcome/index'
   resources :anuncios
   
   get '/search', to: 'anuncios#search'
