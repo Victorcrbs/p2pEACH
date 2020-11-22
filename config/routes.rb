@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get 'welcome/index'
   resources :anuncios
   root 'welcome#index'
-  
+  get 'chats/show'
+  mount ActionCable.server => '/cable'
   get '/search', to: 'anuncios#search', as: 'search'
   resources :sessions, only: [:new, :create, :destroy]
   get 'signup', to: 'usuarios#new', as: 'signup'
