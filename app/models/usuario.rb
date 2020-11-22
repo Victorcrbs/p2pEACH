@@ -4,4 +4,5 @@ class Usuario < ApplicationRecord
   validates :nome, presence: true
   validates :snome, presence: true
   validates :fone, presence: true
+  has_one_attached :avatar
 end

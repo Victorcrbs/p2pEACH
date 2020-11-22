@@ -17,13 +17,20 @@
         <li><%=link_to "P2P EACH", welcome_index_path, :class => "navbar-list-link" %></li>
       </div>
       <% if current_user %>
-        <li><%= link_to "#{current_user.nome} #{current_user.snome}", current_user, :class => "navbar-list-link" %></li>
+        <li><%= link_to current_user, :class => "navbar-list-link perfil" do%>
+          <% if current_user.avatar.attached? %>
+            <img src = "<%=(url_for(current_user.avatar))%>", class = "pfp">
+          <% else %>
+            <%= image_tag image_url('default_pfp.jpg'), :class => "pfp" %>
+          <% end %>
+          <%= "#{current_user.nome} #{current_user.snome}"%>
+        <% end %></li>
         <li><%= link_to "LOGOUT", logout_path, :class => "navbar-list-link" %></li>
       <% else %>
         <li><%=link_to "CADASTRE-SE", signup_path, :class => "navbar-list-link" %></li>
         <li><%=link_to "LOGIN", login_path, :class => "navbar-list-link" %></li>
       <% end %>
-                      <li><%= link_to "ANÚNCIOS", anuncios_path,:class => "navbar-list-link" %> </li>
+        <li><%= link_to "ANÚNCIOS", anuncios_path,:class => "navbar-list-link" %> </li>
 
     </ul>
     <%= yield %>

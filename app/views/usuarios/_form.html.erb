@@ -11,6 +11,10 @@
     </div>
   <% end %>
 
+  <%= form.label "Profile Photo" %>
+  <%= form.file_field :avatar %> <br>
+
+
   <div class="field">
     <%= form.label :nome %>
     <%= form.text_field :nome %>
