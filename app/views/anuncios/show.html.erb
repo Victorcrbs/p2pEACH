@@ -20,3 +20,15 @@
 
 <%= link_to 'Back', anuncios_path %>
 | <%= link_to 'Edit', edit_anuncio_path(@anuncio) %>
+
+<section class="section comments">
+    <div class="container">
+        <h2 class="subtitle is-5"><strong><%= @anuncio.comments.count %></strong> Comments</h2>
+        <%= render @anuncio.comments %>
+        <div class="comment-form">
+            <hr />
+            <h3 class="subtitle is-3">Leave a reply</h3>
+             <%= render 'comments/form' %>
+        </div>
+    </div>
+</section>
