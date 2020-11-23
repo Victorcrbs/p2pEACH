@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2020_11_22_200003) do
-=======
 ActiveRecord::Schema.define(version: 2020_11_22_211012) do
->>>>>>> 66cf3e68fb9d078041ab69f6b90f441aa7bd209e
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -46,13 +42,6 @@ ActiveRecord::Schema.define(version: 2020_11_22_211012) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-<<<<<<< HEAD
-  create_table "ratings", force: :cascade do |t|
-    t.string "nome"
-    t.string "nota"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-=======
   create_table "comments", force: :cascade do |t|
     t.string "name"
     t.text "body"
@@ -60,7 +49,13 @@ ActiveRecord::Schema.define(version: 2020_11_22_211012) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["anuncio_id"], name: "index_comments_on_anuncio_id"
->>>>>>> 66cf3e68fb9d078041ab69f6b90f441aa7bd209e
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.string "nome"
+    t.string "nota"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "usuarios", force: :cascade do |t|
