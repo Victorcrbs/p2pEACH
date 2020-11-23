@@ -382,6 +382,30 @@
         null,
         1,
         1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/myapp/app/models/anuncio.rb": [
+        1,
+        1,
+        null
+      ],
+      "/myapp/app/models/application_record.rb": [
+        1,
+        1,
         null
       ],
       "/myapp/spec/helpers/comments_helper_spec.rb": [
@@ -397,6 +421,22 @@
         null,
         null,
         null,
+        1,
+        1,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/myapp/app/models/comment.rb": [
         1,
         1,
         null
@@ -476,16 +516,6 @@
         1,
         null
       ],
-      "/myapp/app/models/anuncio.rb": [
-        1,
-        1,
-        null
-      ],
-      "/myapp/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
       "/myapp/spec/models/comment_spec.rb": [
         1,
         null,
@@ -512,11 +542,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "/myapp/app/models/comment.rb": [
-        1,
-        1,
         null
       ],
       "/myapp/spec/models/rating_spec.rb": [
@@ -1021,6 +1046,6 @@
         null
       ]
     },
-    "timestamp": 1606098853
+    "timestamp": 1606100829
   }
 }
