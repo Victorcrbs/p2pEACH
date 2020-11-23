@@ -11,5 +11,16 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe CommentsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  module CommentSpecHelper
+  def valid_comment_attributes
+    { :name => "Maria - GPP",
+      :body => "Me empresta a calculadora ali no bandeco?",
+      }
+  end
+end
+
+describe Comment do
+  include CommentSpecHelper
+
+end
 end

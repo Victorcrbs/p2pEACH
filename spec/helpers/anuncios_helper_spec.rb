@@ -11,5 +11,19 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe AnunciosHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  module AnuncioSpecHelper
+    def valid_anuncio_attributes
+      { :item => "caneca do Dasi",
+      :descrição => "Pode ir no panelas mas devolve, ok.",
+      :horário => "18-22h",
+      :tags => "caneca",
+      }
+  end
+end
+
+describe Anuncio do
+  include AnuncioSpecHelper
+
+end
+      
 end
