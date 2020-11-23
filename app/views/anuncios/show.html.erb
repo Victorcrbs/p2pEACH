@@ -18,5 +18,16 @@
   <%= @anuncio.tags %>
 </p>
 
+<br>
+<h2><%= @anuncio.comments.count%> Comentários</h2>
+
+
+<%= render @anuncio.comments %>
+
+<h3>Adicionar um comentário</h3>
+<%= render 'comments/form' %>
+<br>
+
+
 <%= link_to 'Back', anuncios_path %>
 | <%= link_to 'Edit', edit_anuncio_path(@anuncio) %>

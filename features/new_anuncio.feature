@@ -13,4 +13,4 @@ Quando preencho o campo "Horário" com "13-14h"
 Quando preencho o campo "Descrição" com "Sexta edição"
 Quando preencho o campo "Tags" com "TADI"
 E clico em Save Anuncio
-Então o produto deve ter sido salvo no banco de dados
+Então o anuncio deve ter sido salvo no banco de dados
