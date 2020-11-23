@@ -20,3 +20,9 @@ end
 Então ('seu nome deve ter sido alterado para {string}') do |string|
     expect(page).to have_content("Bill Bob")
 end
+
+Então('a página deve me mostrar todos os anúncios publicados por mim') do
+    expect(page).to have_content("Teste")
+    expect(page).to have_content("10h-14h")
+end
+  
