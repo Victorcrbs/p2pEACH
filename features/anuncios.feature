@@ -13,7 +13,7 @@ Quando preencho o campo "Item" com "Livro de TADI"
 Quando preencho o campo "Horário" com "13-14h"
 Quando preencho o campo "Descrição" com "Sexta edição"
 Quando preencho o campo "Tags" com "TADI"
-Quando preencho o campo "Tipo" com "emprestimo"
+Quando escolho a opcao "emprestimo" no radio button
 E clico em Save Anuncio
 Então o anuncio deve ter sido salvo no banco de dados
 E deverei ver o anuncio na página de listagem de anuncios para empréstimo
@@ -25,7 +25,7 @@ Quando preencho o campo "Item" com "Livro de TADI"
 Quando preencho o campo "Horário" com "13-14h"
 Quando preencho o campo "Descrição" com "Sexta edição"
 Quando preencho o campo "Tags" com "TADI"
-Quando preencho o campo "Tipo" com "solicitacao"
+Quando escolho a opcao "solicitacao" no radio button
 E clico em Save Anuncio
 Então o anuncio deve ter sido salvo no banco de dados
 E deverei ver o anuncio na página de listagem de anuncios de itens solicitados

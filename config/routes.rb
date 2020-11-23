@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
   resources :usuarios
   get 'welcome/index'
+  get 'anuncios/emprestimos', to: 'anuncios#emprestimos'
+  get 'anuncios/solicitacoes', to: 'anuncios#solicitacoes'
   resources :anuncios do
     resources :comments
   end 

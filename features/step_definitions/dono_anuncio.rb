@@ -8,6 +8,7 @@ Dado('que criei um novo anúncio') do
     anuncio.descrição = "Esse é um teste"
     anuncio.tags = "teste"
     anuncio.usuario_id = usuario.id
+    anuncio.tipo = "emprestimo"
     anuncio.save
 end
 # - Fim Contexto
