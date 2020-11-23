@@ -6,6 +6,9 @@ Como usuário
 eu quero cadastrar o nome de um objeto, um horário que eu esteja disponível, deixar uma descrição que ache importante e tags relacionadas com meu objeto
 de modo que eu consiga disponibilizar, de forma fácil de encontrar e identificar, um item que desejo emprestar.
 
+Contexto: Logado
+Dado que estou logado
+
 Cenário: Criação de um anúncio
 Dado que estou na página de anuncios
 Quando preencho o campo "Item" com "Livro de TADI"
