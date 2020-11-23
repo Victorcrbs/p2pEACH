@@ -21,3 +21,34 @@
 </p>
 
 <%= link_to 'Editar dados', edit_usuario_path(@usuario) %>
+
+<br><br><br>
+
+<h3> Anúncios do usuário </h3>
+<table>
+ <tr>
+    <th>Item</th>
+    <th>Descrição</th>
+    <th>Horário</th>
+    <th>Tags</th>
+  </tr>
+  
+  <% @usuario.anuncios.each do |anuncio| %>
+    <tr>
+      <td><%= anuncio.item %></td>
+      <td><%= anuncio.descrição %></td>
+      <td><%= anuncio.horário %></td>
+      <td><%= anuncio.tags %></td>
+      <td><%= anuncio.usuario.nome %> <%= anuncio.usuario.snome %></td>
+      
+      <td><%= link_to 'Show', anuncio_path(anuncio) %></td>
+
+      <% if current_user %>
+        <% if anuncio.usuario_id == current_user.id %>
+          <td><%= link_to 'Edit', edit_anuncio_path(anuncio) %></td>
+          <td><%= link_to 'Destroy', anuncio_path(anuncio), method: :delete, data: { confirm: 'Tem certeza que deseja excluir o anuncio?' } %></td>
+        <% end %>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
