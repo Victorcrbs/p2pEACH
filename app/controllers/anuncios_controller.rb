@@ -16,7 +16,7 @@ class AnunciosController < ApplicationController
     
     def create
         @anuncio = Anuncio.new(anuncio_params)
- 
+        @anuncio.usuario_id = current_user.id
         @anuncio.save
         redirect_to @anuncio
     end

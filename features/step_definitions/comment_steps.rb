@@ -1,9 +1,19 @@
 Dado('que estou na página do Anuncio') do
+  usuario = Usuario.new
+  usuario.nome = "Billy"
+  usuario.snome = "Bob"
+  usuario.email = "billybob@usp.br"
+  usuario.password = "senha"
+  usuario.fone = "912345678"
+  usuario.save
+
   anuncio1= Anuncio.new
+  usuario = Usuario.order("id").last
   anuncio1.item = "Livro de TADI"
   anuncio1.horário = "13-14h"
   anuncio1.descrição = "Sexta edição"
   anuncio1.tags = "TADI"
+  anuncio1.usuario_id = usuario.id
   anuncio1.save       
 
   visit "anuncios/#{anuncio1.id}"

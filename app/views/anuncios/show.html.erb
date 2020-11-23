@@ -18,6 +18,24 @@
   <%= @anuncio.tags %>
 </p>
 
+<br><strong>Entre em contato - Usuário</strong>
+<p>
+  <% if @anuncio.usuario.avatar.attached? %>
+    <img src = "<%=(url_for(@anuncio.usuario.avatar))%>", class = "pfp">
+  <% else %>
+    <%= image_tag image_url('default_pfp.jpg'), :class => "pfp" %>
+  <% end %>
+</p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @anuncio.usuario.nome %> <%= @anuncio.usuario.snome %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @anuncio.usuario.email %>
+</p>
+
 <br>
 <h2><%= @anuncio.comments.count%> Comentários</h2>
 
@@ -30,4 +48,9 @@
 
 
 <%= link_to 'Back', anuncios_path %>
-| <%= link_to 'Edit', edit_anuncio_path(@anuncio) %>
+
+<% if current_user %>
+  <%if @anuncio.usuario_id == current_user.id?%>
+    <%= link_to 'Edit', edit_anuncio_path(@anuncio) %>
+  <% end %>
+<% end %>

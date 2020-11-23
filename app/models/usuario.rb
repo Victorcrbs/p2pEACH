@@ -5,4 +5,5 @@ class Usuario < ApplicationRecord
   validates :snome, presence: true
   validates :fone, presence: true
   has_one_attached :avatar
+  has_many :anuncios
 end

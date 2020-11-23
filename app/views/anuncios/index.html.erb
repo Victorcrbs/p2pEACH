@@ -13,10 +13,11 @@
 
   <table>
   <tr>
-    <th>item</th>
-    <th>descrição</th>
-    <th>horário</th>
-    <th>tags</th>
+    <th>Item</th>
+    <th>Descrição</th>
+    <th>Horário</th>
+    <th>Tags</th>
+    <th>Usuário</th>
   </tr>
 
   <% @anuncios.each do |anuncio| %>
@@ -25,10 +26,16 @@
       <td><%= anuncio.descrição %></td>
       <td><%= anuncio.horário %></td>
       <td><%= anuncio.tags %></td>
+      <td><%= anuncio.usuario.nome %> <%= anuncio.usuario.snome %></td>
       
       <td><%= link_to 'Show', anuncio_path(anuncio) %></td>
-      <td><%= link_to 'Edit', edit_anuncio_path(anuncio) %></td>
-      <td><%= link_to 'Destroy', anuncio_path(anuncio), method: :delete, data: { confirm: 'Tem certeza que deseja excluir o anuncio?' } %></td>
+
+      <% if current_user %>
+        <% if anuncio.usuario_id == current_user.id %>
+          <td><%= link_to 'Edit', edit_anuncio_path(anuncio) %></td>
+          <td><%= link_to 'Destroy', anuncio_path(anuncio), method: :delete, data: { confirm: 'Tem certeza que deseja excluir o anuncio?' } %></td>
+        <% end %>
+      <% end %>
     </tr>
   <% end %>
 </table>
