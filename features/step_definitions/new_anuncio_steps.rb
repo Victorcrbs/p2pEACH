@@ -1,4 +1,4 @@
-Dado('que estou na página de anuncios') do
+Dado('que estou na página de novo anuncio') do
   visit '/anuncios/new'
 end
 

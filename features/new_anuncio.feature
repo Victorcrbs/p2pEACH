@@ -8,7 +8,7 @@ de modo que eu consiga disponibilizar, de forma fácil de encontrar e identifica
 
 Cenário: Criação de um anúncio
 Dado que estou logado na conta de Billy Bob
-E que estou na página de anuncios
+E que estou na página de novo anuncio
 Quando preencho o campo "Item" com "Livro de TADI"
 Quando preencho o campo "Horário" com "13-14h"
 Quando preencho o campo "Descrição" com "Sexta edição"
