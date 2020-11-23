@@ -8,7 +8,7 @@
           </div>
           
           <% end %>
-<h1>Objetos para pegar emprestado</h1>
+<h1>Objetos</h1>
 
 
   <table>
@@ -41,3 +41,7 @@
     </tr>
   <% end %>
 </table>
+
+<% if current_user %>
+<%=link_to "add", new_anuncio_path, :class => "material-icons floating-btn" %>
+<% end %>
