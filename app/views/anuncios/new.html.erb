@@ -20,6 +20,12 @@
     </p>
 
     <p>
+      <%= form.label :tipo %><br>
+      <%= form.radio_button :tipo, 'emprestimo' %> Empréstimo<br />
+      <%= form.radio_button :tipo, 'solicitacao' %> Solicitação<br />
+    </p>
+
+    <p>
       <%= form.submit %>
     </p>
   <% end %>

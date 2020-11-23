@@ -8,8 +8,7 @@
           </div>
           
           <% end %>
-<h1>Objetos</h1>
-
+<h1>Objetos para pegar emprestado</h1>
 
   <table>
   <tr>
@@ -18,17 +17,15 @@
     <th>Horário</th>
     <th>Tags</th>
     <th>Usuário</th>
-    <th>Tipo</th>
   </tr>
 
-  <% @anuncios.each do |anuncio| %>
+  <% @anuncios_de_emprestimo.each do |anuncio| %>
     <tr>
       <td><%= anuncio.item %></td>
       <td><%= anuncio.descrição %></td>
       <td><%= anuncio.horário %></td>
       <td><%= anuncio.tags %></td>
       <td><%= anuncio.usuario.nome %> <%= anuncio.usuario.snome %></td>
-      <td><%= anuncio.tipo %></td>
       
       <td><%= link_to 'Show', anuncio_path(anuncio) %></td>
 

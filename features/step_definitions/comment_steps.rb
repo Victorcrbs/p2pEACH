@@ -14,6 +14,7 @@ Dado('que estou na página do Anuncio') do
   anuncio1.descrição = "Sexta edição"
   anuncio1.tags = "TADI"
   anuncio1.usuario_id = usuario.id
+  anuncio1.tipo = "emprestimo"
   anuncio1.save       
 
   visit "anuncios/#{anuncio1.id}"

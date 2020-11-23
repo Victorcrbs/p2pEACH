@@ -14,3 +14,6 @@ Então('deverei ver o aviso {string}') do |string|
     expect(page).to have_content(string)
 end
 
+Quando('escolho a opcao {string} no radio button') do |string|
+    choose('anuncio[tipo]', option: string)
+end
