@@ -11,4 +11,23 @@ RSpec.describe Anuncio, type: :model do
     anuncio.save
     expect(anuncio).not_to be_valid
   end
+
+  it 'invalido sem tipo' do
+    usuario = Usuario.new
+    usuario.nome = "Billy"
+    usuario.snome = "Bob"
+    usuario.email = "billybob@usp.br"
+    usuario.password = "senha"
+    usuario.fone = "912345678"
+    usuario.save
+
+    anuncio = Anuncio.new
+    anuncio.item = "Teste"
+    anuncio.horário = "10h-14h"
+    anuncio.descrição = "Esse é um teste"
+    anuncio.tags = "teste"
+    anuncio.usuario = Usuario.order("id").last
+    anuncio.save
+    expect(anuncio).not_to be_valid
+  end
 end
