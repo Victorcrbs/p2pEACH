@@ -11,7 +11,7 @@ quero anúncios pertençam a seus criadores
 para que consiga entrar em contato com eles.
 
 Contexto: Logado e anúncio criado
-Dado que estou logado
+Dado que estou logado na conta de Billy Bob
 E que criei um novo anúncio
 
 Cenário: Visualizar anúncio

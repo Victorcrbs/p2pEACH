@@ -1,17 +1,5 @@
 
-# - Contexto 
-Dado('que estou logado') do
-    usuario = Usuario.new
-    usuario.nome = "Billy"
-    usuario.snome = "Bob"
-    usuario.email = "billybob@usp.br"
-    usuario.password = "senha"
-    usuario.fone = "912345678"
-    usuario.save
-
-    visit 'sessions/new'
-end
-  
+# - Contexto   
 Dado('que criei um novo anúncio') do
     anuncio = Anuncio.new
     usuario = Usuario.order("id").last
