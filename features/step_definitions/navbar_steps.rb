@@ -9,6 +9,10 @@ Então ('devo estar na página de cadastro') do
     expect(page).to have_current_path("/signup")
 end
 
+Então ('devo estar na página de ratings') do
+    expect(page).to have_current_path("/ratings")
+end
+
 Então ('devo estar na página principal') do
     expect(page).to have_current_path("/welcome/index")
 end

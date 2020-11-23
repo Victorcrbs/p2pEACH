@@ -1,0 +1,19 @@
+<h1>Avaliações</h1>
+<table>
+    <tr>
+    <th>Nome</th>
+    <th>Nota</th>
+    </tr>
+    <% @rating.each do |rating| %>
+    <tr>
+        <td><%= rating.nome %></td>
+        <td><%= rating.nota %></td>
+        <td><%= link_to 'Mostrar', rating_path(rating) %></td>
+        <td><%= link_to 'Editar', edit_rating_path(rating) %></td>
+        <td><%= link_to 'Deletar', rating_path(rating),
+            method: :delete,
+                data: { confirm: 'Você tem certeza?' } %></td>
+    </tr>
+    <% end %>
+</table>
+

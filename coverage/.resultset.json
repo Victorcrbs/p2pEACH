@@ -1,19 +1,10 @@
 {
   "RSpec": {
     "coverage": {
-      "/myapp/spec/features/pfp_feature_spec.rb": [
+      "/home/victors/p2pEACH/spec/controllers/rating_spec.rb": [
+        1,
         1,
         null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -21,29 +12,16 @@
         1,
         1,
         null,
-        1,
-        null,
         null,
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
-        1,
         null,
         null,
         null
       ],
-      "/myapp/spec/rails_helper.rb": [
+      "/home/victors/p2pEACH/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -111,14 +89,14 @@
         null,
         null
       ],
-      "/myapp/config/environment.rb": [
+      "/home/victors/p2pEACH/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/myapp/config/application.rb": [
+      "/home/victors/p2pEACH/config/application.rb": [
         1,
         null,
         1,
@@ -140,13 +118,13 @@
         null,
         null
       ],
-      "/myapp/config/boot.rb": [
+      "/home/victors/p2pEACH/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/myapp/config/environments/test.rb": [
+      "/home/victors/p2pEACH/config/environments/test.rb": [
         null,
         null,
         null,
@@ -197,7 +175,7 @@
         null,
         null
       ],
-      "/myapp/config/initializers/application_controller_renderer.rb": [
+      "/home/victors/p2pEACH/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -207,7 +185,7 @@
         null,
         null
       ],
-      "/myapp/config/initializers/assets.rb": [
+      "/home/victors/p2pEACH/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -223,7 +201,7 @@
         null,
         null
       ],
-      "/myapp/config/initializers/backtrace_silencers.rb": [
+      "/home/victors/p2pEACH/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -232,7 +210,7 @@
         null,
         null
       ],
-      "/myapp/config/initializers/content_security_policy.rb": [
+      "/home/victors/p2pEACH/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -264,20 +242,20 @@
         null,
         null
       ],
-      "/myapp/config/initializers/cookies_serializer.rb": [
+      "/home/victors/p2pEACH/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/myapp/config/initializers/filter_parameter_logging.rb": [
+      "/home/victors/p2pEACH/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/myapp/config/initializers/inflections.rb": [
+      "/home/victors/p2pEACH/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -295,13 +273,13 @@
         null,
         null
       ],
-      "/myapp/config/initializers/mime_types.rb": [
+      "/home/victors/p2pEACH/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/myapp/config/initializers/wrap_parameters.rb": [
+      "/home/victors/p2pEACH/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -317,7 +295,7 @@
         null,
         null
       ],
-      "/myapp/config/routes.rb": [
+      "/home/victors/p2pEACH/config/routes.rb": [
         1,
         1,
         1,
@@ -326,7 +304,7 @@
         1,
         1,
         1,
-        null,
+        1,
         1,
         1,
         1,
@@ -337,160 +315,311 @@
         null,
         null
       ],
-      "/myapp/app/helpers/anuncios_helper.rb": [
+      "/home/victors/p2pEACH/app/helpers/anuncios_helper.rb": [
         1,
         null
       ],
-      "/myapp/app/helpers/application_helper.rb": [
+      "/home/victors/p2pEACH/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/myapp/app/helpers/sessions_helper.rb": [
+      "/home/victors/p2pEACH/app/helpers/ratings_helper.rb": [
         1,
         null
       ],
-      "/myapp/app/helpers/usuarios_helper.rb": [
+      "/home/victors/p2pEACH/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/myapp/app/helpers/welcome_helper.rb": [
+      "/home/victors/p2pEACH/app/helpers/usuarios_helper.rb": [
         1,
         null
       ],
-      "/myapp/spec/helpers/anuncios_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
+      "/home/victors/p2pEACH/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/myapp/spec/helpers/sessions_helper_spec.rb": [
+      "/home/victors/p2pEACH/app/controllers/ratings_controller.rb": [
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
+        0,
         null,
         null,
         1,
+        2,
+        null,
+        null,
         1,
-        null
-      ],
-      "/myapp/spec/helpers/usuarios_helper_spec.rb": [
+        0,
+        null,
+        null,
         1,
+        0,
         null,
+        0,
+        0,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        0,
         null,
         null,
         null,
         1,
-        1,
-        null
-      ],
-      "/myapp/spec/helpers/welcome_helper_spec.rb": [
-        1,
+        0,
+        0,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        0,
         null,
         null,
         1,
-        1,
-        null
-      ],
-      "/myapp/spec/models/anuncio_spec.rb": [
-        1,
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
         null,
         1,
-        1,
-        null
-      ],
-      "/myapp/app/models/anuncio.rb": [
-        1,
-        null
-      ],
-      "/myapp/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/myapp/spec/models/usuario_spec.rb": [
-        1,
+        0,
         null,
-        1,
-        1,
-        null
-      ],
-      "/myapp/app/models/usuario.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/myapp/spec/requests/anuncios_request_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/myapp/spec/requests/sessions_request_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
         null,
         1,
         1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
+        0,
         null,
         null,
         null,
         null
       ],
-      "/myapp/spec/requests/usuarios_spec.rb": [
+      "/home/victors/p2pEACH/app/controllers/application_controller.rb": [
+        1,
+        1,
+        1,
+        16,
+        11,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/features/pfp_feature_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/helpers/anuncios_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/helpers/ratings_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/helpers/sessions_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/helpers/usuarios_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/helpers/welcome_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/models/anuncio_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/app/models/anuncio.rb": [
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/models/rating_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/app/models/rating.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/models/usuario_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/app/models/usuario.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/requests/anuncios_request_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/requests/ratings_request_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/requests/sessions_request_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/victors/p2pEACH/spec/requests/usuarios_spec.rb": [
         1,
         null,
         null,
@@ -621,14 +750,14 @@
         null,
         null
       ],
-      "/myapp/spec/requests/welcome_request_spec.rb": [
+      "/home/victors/p2pEACH/spec/requests/welcome_request_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/myapp/spec/routing/usuarios_routing_spec.rb": [
+      "/home/victors/p2pEACH/spec/routing/usuarios_routing_spec.rb": [
         1,
         null,
         1,
@@ -668,7 +797,7 @@
         null,
         null
       ],
-      "/myapp/app/controllers/usuarios_controller.rb": [
+      "/home/victors/p2pEACH/app/controllers/usuarios_controller.rb": [
         1,
         1,
         1,
@@ -745,40 +874,28 @@
         null,
         null
       ],
-      "/myapp/app/controllers/application_controller.rb": [
-        1,
-        1,
-        1,
-        16,
-        11,
-        null,
-        5,
-        null,
-        null,
-        null
-      ],
-      "/myapp/spec/views/sessions/create.html.erb_spec.rb": [
+      "/home/victors/p2pEACH/spec/views/sessions/create.html.erb_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/myapp/spec/views/sessions/destroy.html.erb_spec.rb": [
+      "/home/victors/p2pEACH/spec/views/sessions/destroy.html.erb_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/myapp/spec/views/sessions/new.html.erb_spec.rb": [
+      "/home/victors/p2pEACH/spec/views/sessions/new.html.erb_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/myapp/spec/views/usuarios/edit.html.erb_spec.rb": [
+      "/home/victors/p2pEACH/spec/views/usuarios/edit.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -810,7 +927,7 @@
         null,
         null
       ],
-      "/myapp/spec/views/usuarios/index.html.erb_spec.rb": [
+      "/home/victors/p2pEACH/spec/views/usuarios/index.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -835,7 +952,7 @@
         null,
         null
       ],
-      "/myapp/spec/views/usuarios/new.html.erb_spec.rb": [
+      "/home/victors/p2pEACH/spec/views/usuarios/new.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -867,7 +984,7 @@
         null,
         null
       ],
-      "/myapp/spec/views/usuarios/show.html.erb_spec.rb": [
+      "/home/victors/p2pEACH/spec/views/usuarios/show.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -890,7 +1007,7 @@
         null,
         null
       ],
-      "/myapp/app/controllers/sessions_controller.rb": [
+      "/home/victors/p2pEACH/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -910,11 +1027,11 @@
         null,
         null
       ],
-      "/myapp/app/controllers/welcome_controller.rb": [
+      "/home/victors/p2pEACH/app/controllers/welcome_controller.rb": [
         1,
         null
       ]
     },
-    "timestamp": 1606056808
+    "timestamp": 1606093367
   }
 }
