@@ -4,7 +4,9 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
   resources :usuarios
   get 'welcome/index'
-  resources :anuncios
+  resources :anuncios do
+    resources :comments
+  end 
   root 'welcome#index'
   resources :ratings
   get '/search', to: 'anuncios#search', as: 'search'
