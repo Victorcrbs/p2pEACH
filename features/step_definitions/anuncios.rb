@@ -38,3 +38,8 @@ Dado('que criei um novo anúncio de {string}') do |string|
     anuncio.tipo = string
     anuncio.save
 end
+
+
+Quando('vou para página de listagens de anúncio') do
+    visit 'anuncios'
+  end

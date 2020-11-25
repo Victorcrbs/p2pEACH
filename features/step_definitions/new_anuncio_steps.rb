@@ -15,3 +15,23 @@ Então('o anuncio deve ter sido salvo no banco de dados') do
   expect(anuncio.tags).to eq("TADI")
   expect(anuncio.usuario_id).to eq(usuario.id)
 end
+
+Quando('eu preencher as informações do anúncio') do
+  fill_in "Item", :with => "Teste"
+  fill_in "Horário", :with => "10h-14h"
+  fill_in "Descrição", :with => "Esse é um teste"
+  fill_in "Tags", :with => "teste"
+  choose('anuncio[tipo]', option: "emprestimo")
+end
+
+Dado('que criei um novo anúncio') do
+  anuncio = Anuncio.new
+  usuario = Usuario.order("id").last
+  anuncio.item = "Teste"
+  anuncio.horário = "10h-14h"
+  anuncio.descrição = "Esse é um teste"
+  anuncio.tags = "teste"
+  anuncio.usuario_id = usuario.id
+  anuncio.tipo = "emprestimo"
+  anuncio.save
+end
