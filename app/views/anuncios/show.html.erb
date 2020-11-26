@@ -1,4 +1,17 @@
 <h3> Item de <%= @anuncio.tipo %></h3>
+
+<% if @anuncio.imagens.attached? %>
+  <% (0...@anuncio.imagens.count).each do |imagem| %>
+    <div class="show_image_holder">
+      <img src = "<%=(url_for(@anuncio.imagens[imagem]))%>", class = "show_imagem_anuncio">
+    </div>
+  <% end %>
+<% else %>
+  <div style="width: 200px; height: 200px;">
+    <img src = "<%=(image_url('anunciosemimagem.jpeg'))%>", class = "show_imagem_anuncio">
+  </div>
+<% end %>
+
 <p>
   <strong>Item:</strong>
   <%= @anuncio.item %>

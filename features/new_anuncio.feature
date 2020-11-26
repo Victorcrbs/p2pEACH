@@ -13,6 +13,6 @@ Quando preencho o campo "Item" com "Livro de TADI"
 Quando preencho o campo "Horário" com "13-14h"
 Quando preencho o campo "Descrição" com "Sexta edição"
 Quando preencho o campo "Tags" com "TADI"
-Quando escolho a opcao "emprestimo" no radio button
+Quando escolho a opcao "emprestimo" no radio button "tipo"
 E clico em Save Anuncio
 Então o anuncio deve ter sido salvo no banco de dados

@@ -13,6 +13,7 @@
 
   <table>
   <tr>
+    <th>Imagem</th>
     <th>Item</th>
     <th>Descrição</th>
     <th>Horário</th>
@@ -23,6 +24,13 @@
 
   <% @anuncios.each do |anuncio| %>
     <tr>
+      <% if anuncio.imagens.attached? %>
+        <td><img src = "<%=(url_for(anuncio.imagens.first))%>", class="index_imagem_anuncio"></td>
+      <% else %>
+        <%= %>
+        <td><img src = "<%=(image_url('anunciosemimagem.jpeg'))%>", class="index_imagem_anuncio"></td>
+      <% end %>
+
       <td><%= anuncio.item %></td>
       <td><%= anuncio.descrição %></td>
       <td><%= anuncio.horário %></td>
