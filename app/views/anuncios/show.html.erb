@@ -1,4 +1,11 @@
 <h3> Item de <%= @anuncio.tipo %></h3>
+
+<% (0...@anuncio.imagens.count).each do |imagem| %>
+  <div style="width: 200px; height: 200px;">
+    <%= image_tag(@anuncio.imagens[imagem], style:'width: 100%; height: auto') %> 
+  </div>
+<% end %>
+
 <p>
   <strong>Item:</strong>
   <%= @anuncio.item %>

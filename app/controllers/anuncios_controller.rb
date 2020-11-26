@@ -23,7 +23,13 @@ class AnunciosController < ApplicationController
     
     def update
         @anuncio = Anuncio.find(params[:id])
+
         if @anuncio.update(params[:anuncio].permit(:item, :descrição, :horário, :tags, :tipo))
+            if params[:anuncio][:imagens].present?
+                params[:anuncio][:imagens].each do |imagem|
+                    @anuncio.imagens.attach(imagem)
+                end
+            end
             redirect_to @anuncio
         else
             render 'edit'
@@ -39,7 +45,7 @@ class AnunciosController < ApplicationController
     
 
         def anuncio_params
-            params.require(:anuncio).permit(:item, :descrição, :horário, :tags, :tipo)
+            params.require(:anuncio).permit(:item, :descrição, :horário, :tags, :tipo, imagens: [])
         end
 
         def search  
