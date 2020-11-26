@@ -24,7 +24,7 @@ RSpec.describe "Imagens no anuncio", type: :request do
             anuncio.save
 
             anuncio2 = Anuncio.order("id").last
-            visit 'anuncios/'+anuncio2.id
+            visit 'anuncios/'+anuncio2.id.to_s
             expect(page).to have_css("img[src*='anuncio.jpeg']")
         end
         it "mostra a foto adicionada na página de listagem de anúncios" do
@@ -72,8 +72,8 @@ RSpec.describe "Imagens no anuncio", type: :request do
             anuncio.save
 
             anuncio2 = Anuncio.order("id").last
-            visit 'anuncios/'+anuncio2.id
-            expect(page).to have_css("img[src*='default_pfp-d654e15f6fc4d0bd1be77ade9ab41f50e16e327b9365d87f971b1f106b6fa1ef.jpg']")
+            visit 'anuncios/'+anuncio2.id.to_s
+            expect(page).to have_css("img[src*='anuncio_sem_imagem.jpeg']")
         end
         it "mostra a foto padrão na página de listagem de anúncios" do
             usuario = Usuario.new
@@ -95,7 +95,7 @@ RSpec.describe "Imagens no anuncio", type: :request do
             anuncio.save
 
             visit 'anuncios'
-            expect(page).to have_css("img[src*='default_pfp-d654e15f6fc4d0bd1be77ade9ab41f50e16e327b9365d87f971b1f106b6fa1ef.jpg']")
+            expect(page).to have_css("img[src*='anuncio_sem_imagem.jpeg']")
         end
     end
 end

@@ -10,7 +10,7 @@ end
   
 Então('deverei ver o anúncio com foto na página do anúncio') do
   anuncio = Anuncio.order("id").last
-  visit 'anuncios/'+anuncio.id+'/'
+  visit 'anuncios/'+anuncio.id.to_s+'/'
 
   expect(page).to have_css("img[src*='anuncio.jpeg']")
 end
@@ -24,7 +24,7 @@ end
   
 Então('deverei ver o anúncio sem foto na página do anúncio') do
   anuncio = Anuncio.order("id").last
-  visit 'anuncios/'+anuncio.id+'/'
+  visit 'anuncios/'+anuncio.id.to_s+'/'
 
   expect(page).to have_css("img[src*='anuncio_sem_imagem.jpeg']")
 end
