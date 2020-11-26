@@ -54,3 +54,9 @@ Quando escolho a opcao "emprestimo" no radio button "tipo"
 E clico em Update Anuncio
 Então deverei ver o anuncio "Mudei as informações" na página de listagem de anuncios de itens de "emprestimos"
 
+Cenário: Deletar Anúncio
+Dado que estou logado na conta de Billy Bob
+E que criei um novo anúncio de "solicitacao"
+E vou para página de listagens de anúncio
+Quando clico em "Destroy"
+Então não deverei ver o anuncio "Teste" na página de listagem de anuncios

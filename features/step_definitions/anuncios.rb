@@ -43,3 +43,9 @@ end
 Quando('vou para página de listagens de anúncio') do
     visit 'anuncios'
   end
+
+Então('não deverei ver o anuncio {string} na página de listagem de anuncios') do |string|
+    visit 'anuncios'
+    expect(page).not_to have_content(string)
+end
+  
