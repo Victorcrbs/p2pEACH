@@ -35,5 +35,5 @@ E deverei ver o anúncio sem foto na página do anúncio
 Cenário: Listar anuncios
 Dado que criei um novo anúncio
 Quando vou para página de listagens de anúncio
-Então a página deve me mostrar os dados do anúncio e uma foto do item
+Então a página deve me mostrar uma foto do item
 

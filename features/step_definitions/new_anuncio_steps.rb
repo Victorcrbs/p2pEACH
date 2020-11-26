@@ -33,5 +33,6 @@ Dado('que criei um novo anúncio') do
   anuncio.tags = "teste"
   anuncio.usuario_id = usuario.id
   anuncio.tipo = "emprestimo"
+  anuncio.imagens = [fixture_file_upload(File.join(Rails.root, 'public', 'anuncio.jpeg'))]
   anuncio.save
 end

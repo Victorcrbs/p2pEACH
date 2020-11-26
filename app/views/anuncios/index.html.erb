@@ -25,9 +25,10 @@
   <% @anuncios.each do |anuncio| %>
     <tr>
       <% if anuncio.imagens.attached? %>
-        <td><%= image_tag(anuncio.imagens.first, style:'width: 150px; height: 100px;') unless anuncio.imagens.blank? %></td>
+        <td><img src = "<%=(url_for(anuncio.imagens.first))%>", class="index_imagem_anuncio"></td>
       <% else %>
-        <td><%= image_tag(image_url('anuncio_sem_imagem.jpeg'), style:'width: 150px; height: 100px;') %></td>
+        <%= %>
+        <td><img src = "<%=(image_url('anunciosemimagem.jpeg'))%>", class="index_imagem_anuncio"></td>
       <% end %>
 
       <td><%= anuncio.item %></td>
