@@ -26,7 +26,7 @@ Então('deverei ver o anúncio sem foto na página do anúncio') do
   anuncio = Anuncio.order("id").last
   visit 'anuncios/'+anuncio.id+'/'
 
-  expect(page).to have_css("img[src*='default_pfp-d654e15f6fc4d0bd1be77ade9ab41f50e16e327b9365d87f971b1f106b6fa1ef.jpg']")
+  expect(page).to have_css("img[src*='anuncio_sem_imagem.jpeg']")
 end
 
 Então('a página deve me mostrar os dados do anúncio e uma foto do item') do

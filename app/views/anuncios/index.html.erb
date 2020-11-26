@@ -13,6 +13,7 @@
 
   <table>
   <tr>
+    <th>Imagem</th>
     <th>Item</th>
     <th>Descrição</th>
     <th>Horário</th>
@@ -23,6 +24,12 @@
 
   <% @anuncios.each do |anuncio| %>
     <tr>
+      <% if anuncio.imagens.attached? %>
+        <td><%= image_tag(anuncio.imagens.first, style:'width: 150px; height: 100px;') unless anuncio.imagens.blank? %></td>
+      <% else %>
+        <td><%= image_tag(image_url('anuncio_sem_imagem.jpeg'), style:'width: 150px; height: 100px;') %></td>
+      <% end %>
+
       <td><%= anuncio.item %></td>
       <td><%= anuncio.descrição %></td>
       <td><%= anuncio.horário %></td>
