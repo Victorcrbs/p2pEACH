@@ -64,7 +64,7 @@
 <%= link_to 'Back', anuncios_path %>
 
 <% if current_user %>
-  <%if @anuncio.usuario_id == current_user.id?%>
+  <% if @anuncio.usuario_id == current_user.id?%>
     <%= link_to 'Edit', edit_anuncio_path(@anuncio) %>
   <% end %>
 <% end %>

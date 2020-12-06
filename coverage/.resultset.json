@@ -781,6 +781,10 @@
       "/myapp/app/models/comment.rb": [
         1,
         1,
+        1,
+        1,
+        null,
+        1,
         null
       ],
       "/myapp/spec/models/rating_spec.rb": [
@@ -1572,6 +1576,6 @@
         null
       ]
     },
-    "timestamp": 1607288997
+    "timestamp": 1607289161
   }
 }
