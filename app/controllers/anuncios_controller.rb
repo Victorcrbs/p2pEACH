@@ -1,6 +1,8 @@
-class AnunciosController < ApplicationController    
+class AnunciosController < ApplicationController 
+    helper_method :sort_column, :sort_direction       
     def index
         @anuncios = Anuncio.all
+        @anuncios = Anuncio.order(sort_column + " " + sort_direction)
     end
     
     def show
@@ -44,20 +46,20 @@ class AnunciosController < ApplicationController
     end
     
 
-        def anuncio_params
+    def anuncio_params
             params.require(:anuncio).permit(:item, :descrição, :horário, :tags, :tipo, imagens: [])
-        end
+    end
 
-        def search  
-            if params[:search].blank?  
-                redirect_to(root_path, alert: "Empty field!") and return  
-              else  
-              @parameter = params[:search].downcase  
-              @results = Anuncio.all.where("lower(item) LIKE :search", search: "#{@parameter}%")
-              @tags= Anuncio.all.where("lower(tags) LIKE :search", search: "#{@parameter}%")  
+    def search  
+        if params[:search].blank?  
+            redirect_to(root_path, alert: "Empty field!") and return  
+        else  
+            @parameter = params[:search].downcase  
+            @results = Anuncio.all.where("lower(item) LIKE :search", search: "#{@parameter}%")
+            @tags= Anuncio.all.where("lower(tags) LIKE :search", search: "#{@parameter}%")  
            
-          end
         end
+    end
 
         def emprestimos
             @anuncios = Anuncio.all
@@ -72,7 +74,16 @@ class AnunciosController < ApplicationController
             @anuncios_de_solicitacao = []
             @anuncios.each do |anuncio|
                 @anuncios_de_solicitacao << anuncio if anuncio.tipo == 'solicitacao'
+                end
             end
         end
  
-end
+    private
+
+    def sort_column
+        Anuncio.column_names.include?(params[:sort]) ? params[:sort] : "item"
+    end
+      
+    def sort_direction
+        %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+    end

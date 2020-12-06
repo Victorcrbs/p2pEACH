@@ -14,12 +14,12 @@
   <table>
   <tr>
     <th>Imagem</th>
-    <th>Item</th>
-    <th>Descrição</th>
-    <th>Horário</th>
-    <th>Tags</th>
-    <th>Usuário</th>
-    <th>Tipo</th>
+    <th><%= sortable "item", "Item" %></th>
+    <th><%= sortable "descrição", "Descrição"  %></th>
+    <th><%= sortable "horário", "Horário"  %></th>
+    <th><%= sortable "tags", "Tags"  %></th>
+    <th><%= sortable "usuário", "Usuário"  %></th>
+    <th><%= sortable "tipo", "Tipo" %></th>
   </tr>
 
   <% @anuncios.each do |anuncio| %>
