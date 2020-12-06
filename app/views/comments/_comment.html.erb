@@ -3,10 +3,10 @@
 <p><%= time_ago_in_words(comment.created_at) %></p>
 
 <%= link_to 'responder', new_anuncio_comment_path(@anuncio, parent_id: comment.id), remote: true %>
-
+<div>
     <% comment.replies.each do |reply| %> 
       <%= render partial: 'comments/reply', locals: { reply: reply } %>
     <% end %>
-
+</div>
  
  <div id="reply-form-<%= comment.id %>"></div>

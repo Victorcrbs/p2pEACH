@@ -30,7 +30,7 @@ Dado('que estou na página do Anuncio criado') do
         expect(page).to have_content("Sexta edição")
         expect(page).to have_content("TADI")
       
-      expect(page).to have_content("Cláudio de biotec")
+      expect(page).to have_content("Billy Bob")
       expect(page).to have_content("Posso te encontrar na cantina do CB 16h?")
       expect(page).to have_content("responder")
     end

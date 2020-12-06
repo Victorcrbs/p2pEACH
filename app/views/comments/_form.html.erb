@@ -1,8 +1,5 @@
 <%= form_for([@anuncio, @anuncio.comments.build]) do |f|%>
-<p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-</p>
+
 <p>
     <%= f.label :body %><br>
     <%= f.text_area :body %>
@@ -13,3 +10,4 @@
 </p>
 
 <% end %>
+
