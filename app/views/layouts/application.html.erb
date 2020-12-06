@@ -14,7 +14,7 @@
   <body>
     <ul class="navbar-list">
       <div id="navbar_title">
-        <li><%=link_to "P2P EACH", welcome_index_path, :class => "navbar-list-link" %></li>
+        <li><%=link_to "P2P EACH", anuncios_path, :class => "navbar-list-link" %></li>
       </div>
       <% if current_user %>
         <li><%= link_to current_user, :class => "navbar-list-link perfil" do%>
@@ -30,8 +30,7 @@
         <li><%=link_to "CADASTRE-SE", signup_path, :class => "navbar-list-link" %></li>
         <li><%=link_to "LOGIN", login_path, :class => "navbar-list-link" %></li>
       <% end %>
-        <li><%= link_to "ANÚNCIOS", anuncios_path,:class => "navbar-list-link" %> </li>
-        <li><%= link_to "Avaliações ", ratings_path,:class => "navbar-list-link" %> </li>
+        <li><%= link_to "AVALIAÇÕES ", ratings_path,:class => "navbar-list-link" %> </li>
     </ul>
     <%= yield %>
 </body>

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :anuncios do
     resources :comments
   end 
-  root 'welcome#index'
+  root 'anuncios#index'
   resources :ratings
   get '/search', to: 'anuncios#search', as: 'search'
   resources :sessions, only: [:new, :create, :destroy]

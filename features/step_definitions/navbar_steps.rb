@@ -14,5 +14,5 @@ Então ('devo estar na página de ratings') do
 end
 
 Então ('devo estar na página principal') do
-    expect(page).to have_current_path("/welcome/index")
+    expect(page).to have_current_path("/anuncios")
 end
