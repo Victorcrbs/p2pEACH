@@ -50,16 +50,17 @@ Dado('que criei um novo anúncio com duas imagens') do
 end
 
 Quando('clicar para deletar uma imagem') do
-  pending # Write code here that turns the phrase above into concrete actions
+  first('.show_image_holder').click_link('Remove')
+
 end
 
 Então('a imagem deve ter sido excluída do banco de dados') do
   anuncio = Anuncio.order("id").last
   (0...anuncio.imagens.count).each do |imagem|
-    expect(url_for(anuncio.imagens[imagem])).not_to have_content("index.jpeg")
+    expect(url_for(anuncio.imagens[imagem])).not_to have_content("anuncio.jpeg")
   end
 end
 
 Então('não deverei ver a imagem na página do anúncio') do
-  expect(page).not_to have_css("img[src*='index.jpeg']")
+  expect(page).not_to have_css("img[src*='anuncio.jpeg']")
 end
