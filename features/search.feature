@@ -11,3 +11,10 @@ Cenário: Buscar um objeto disponível
   Quando preencho o campo de busca com "Livro de TADI"
   E clico no botão "Buscar"
   Então encontromeu objeto na página
+
+Cenário: Buscar um objeto não existente
+  Dado que tenho um anuncio cadastrado
+ 
+  Quando preencho o campo de busca com "Caneca do DASI"
+  E clico no botão "Buscar"
+  Então não encontro meu objeto na página
