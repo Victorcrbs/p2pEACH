@@ -16,7 +16,7 @@ para que eu possa selecionar mais rápido um anúncio.
 Contexto:
     Dado que estou logado na conta de Billy Bob
 
-Cenário: Cadastro de anúncio com foto
+Cenário: Cadastro de anúncio com foto válida
 Dado que estou na página de novo anuncio
 Quando eu preencher as informações do anúncio
 E adicionar uma imagem
@@ -27,7 +27,6 @@ E deverei ver o anúncio com foto na página do anúncio
 Cenário: Cadastro de anúncio sem foto
 Dado que estou na página de novo anuncio
 Quando eu preencher as informações do anúncio
-#Mas deixar o campo "Foto" vazio
 E clico em Save Anuncio
 Então ele deve ter sido salvo no banco de dados sem foto
 E deverei ver o anúncio sem foto na página do anúncio
@@ -37,3 +36,11 @@ Dado que criei um novo anúncio
 Quando vou para página de listagens de anúncio
 Então a página deve me mostrar uma foto do item
 
+Cenário: Imagem inválida 
+Dado que estou logado na conta de Billy Bob
+E que criei um novo anúncio
+E que estou na página de editar anuncio
+Quando eu preencher as informações do anúncio
+E adicionar um arquivo inválido
+E clico em Update Anuncio
+Então deverei ver o aviso "formato inválido"

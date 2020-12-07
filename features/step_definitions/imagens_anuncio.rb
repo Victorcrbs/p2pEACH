@@ -36,3 +36,9 @@ Então('a página deve me mostrar uma foto do item') do
 
   expect(page).to have_css("img[src*='anuncio.jpeg']")
 end
+
+Quando('adicionar um arquivo inválido') do
+  page.attach_file(File.join(Rails.root, 'public', 'invalido.txt')) do
+    page.find("#imagem_anuncio_button").click
+  end
+end
