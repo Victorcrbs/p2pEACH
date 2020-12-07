@@ -35,7 +35,7 @@ end
     expect(page).to have_content("Livro de TADI")
   end
   
-  Então("não deve haver treinos na listagem") do
-    noDataInfo = find('#no_workout_text')
-    expect(noDataInfo)
+  Então("não encontro meu objeto na página") do
+   
+    expect(page).not_to have_content("Caneca do DASI")
   end
