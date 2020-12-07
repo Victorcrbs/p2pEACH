@@ -37,6 +37,12 @@ class AnunciosController < ApplicationController
             render 'edit'
         end
     end
+
+    def delete_image_attachment
+        @imagem = ActiveStorage::Attachment.find(params[:id])
+        @imagem.purge
+        redirect_back(fallback_location: anuncios_path)
+    end
     
     def destroy
         @anuncio = Anuncio.find(params[:id])
@@ -44,6 +50,7 @@ class AnunciosController < ApplicationController
         @anuncio.destroy
         redirect_to anuncios_path
     end
+    
     
 
     def anuncio_params

@@ -46,6 +46,15 @@
       <%= form.file_field :imagens, multiple: true, :id => "imagem_anuncio_button" %>     
     </p>
 
+    <% if @anuncio.imagens.attached? %>
+      <% (0...@anuncio.imagens.count).each do |imagem| %>
+        <div class="show_image_holder">
+          <img src = "<%=(url_for(@anuncio.imagens[imagem]))%>", class = "show_imagem_anuncio">
+          <%= link_to "Remove", delete_image_attachment_anuncio_url(@anuncio.imagens[imagem]), method: :delete, data: {confirm: "Tem certeza?"} %>
+        </div>
+      <% end %>
+    <% end %>
+
     <p>
       <%= form.submit %>
     </p>
