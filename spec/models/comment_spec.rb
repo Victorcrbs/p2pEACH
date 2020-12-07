@@ -18,7 +18,6 @@ RSpec.describe Comment, type: :model do
     
     comment.body = "me empresta por volta de 15h?"
   
-  
     expect(comment.body).to eq 'me empresta por volta de 15h?'
   end
 

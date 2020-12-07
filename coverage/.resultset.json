@@ -666,10 +666,9 @@
         null,
         1,
         1,
-        1,
-        1,
         null,
         1,
+        null,
         1,
         null,
         null,
@@ -678,6 +677,10 @@
       ],
       "/myapp/app/models/comment.rb": [
         1,
+        1,
+        1,
+        1,
+        null,
         1,
         null
       ],
@@ -875,6 +878,10 @@
         null,
         null,
         1,
+        1,
+        2,
+        null,
+        null,
         null,
         null,
         null,
@@ -1361,7 +1368,7 @@
       "/myapp/app/controllers/anuncios_controller.rb": [
         1,
         1,
-        2,
+        4,
         null,
         null,
         1,
@@ -1457,12 +1464,8 @@
         0,
         null,
         null
-      ],
-      "/myapp/app/controllers/welcome_controller.rb": [
-        1,
-        null
       ]
     },
-    "timestamp": 1606394096
+    "timestamp": 1607303185
   }
 }
