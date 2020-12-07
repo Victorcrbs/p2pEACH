@@ -37,3 +37,9 @@ Dado que criei um novo anúncio
 Quando vou para página de listagens de anúncio
 Então a página deve me mostrar uma foto do item
 
+Cenário: Deletar imagem 
+Dado que criei um novo anúncio com duas imagens
+E que estou na página de editar anuncio
+Quando clicar para deletar uma imagem
+Então a imagem deve ter sido excluída do banco de dados
+E não deverei ver a imagem na página do anúncio

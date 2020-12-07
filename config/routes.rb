@@ -8,7 +8,10 @@ Rails.application.routes.draw do
   get 'anuncios/solicitacoes', to: 'anuncios#solicitacoes'
   resources :anuncios do
     resources :comments
-  end 
+    member do
+      delete :delete_image_attachment
+    end
+  end
   root 'anuncios#index'
   resources :ratings
   get '/search', to: 'anuncios#search', as: 'search'
